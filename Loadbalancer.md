@@ -1,6 +1,7 @@
 # AWS-Labs_Foundation
 #### Load Balancer 
-![WhatsApp Image 2023-03-24 at 2 59 36 PM](https://user-images.githubusercontent.com/128603198/227529706-f208cdf2-ee11-4514-ad59-456f8dee224f.jpeg)
+![Screenshot 2023-03-24 151643](https://user-images.githubusercontent.com/128603198/227531438-c9716611-5f13-496c-8b25-dcfef1da6cbf.png)
+
 
 >> Steps
 ## Private1_EC2_Not Assign a Public IP
