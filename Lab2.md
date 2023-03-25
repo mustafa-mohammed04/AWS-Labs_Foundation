@@ -1,6 +1,9 @@
 # AWS-Labs_Foundation
 ## Lab2_Make VPC and two Subnets(Public & Private) ubder this VPC and Make Two EC2s to Two Subnets for Installing Apache2
 
+## Flow 
+![6](https://user-images.githubusercontent.com/128603198/227671609-f1fa861f-bc9d-40b4-a9b0-cd717c4d3ac4.png)
+
 #### Install Apache2 to publicEC2
 ![1](https://user-images.githubusercontent.com/128603198/226910295-4dad2a37-9c5d-456c-a7fa-b75d35d1f603.png)
 
