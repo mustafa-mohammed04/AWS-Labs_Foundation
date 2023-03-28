@@ -26,6 +26,40 @@ def lambda_handler (event, context):
         print(dest_key)
         s3.Object(dest_bucket.name, dest_key).copy_from(CopySource= {'Bucket': obj.bucket_name, 'Key': obj.key})
 ```
+``` python
+import boto3
+
+s3 = boto3.resource('s3')
+
+def lambda_handler (event, context):
+
+    
+    
+    dynamodb = boto3.resource('dynamodb')
+    bucket = s3.Bucket('mustafasrc98')
+    dest_bucket=s3.Bucket('mustafadest98')
+
+    print(dest_bucket)
+    print(bucket)
+    
+    table = dynamodb.Table('mustafadynamotable')
+    
+    for obj in bucket.objects.all():
+        dest_key=obj.key
+        print(dest_key)
+        s3.Object(dest_bucket.name, dest_key).copy_from(CopySource= {'Bucket': obj.bucket_name, 'Key': obj.key})
+
+         response = table.put_item(
+          Item={
+                'Name': obj.key,
+                
+            }
+         )
+         
+    return response
+```
+
+
 
 ## Video
 https://user-images.githubusercontent.com/128603198/228062300-bf6ab39a-0689-4a33-8622-d4afd0a5616b.mp4
